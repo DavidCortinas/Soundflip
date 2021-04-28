@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h4>Home</h4>   
+    <hr />
+    <form class="form-inline" action="{{ url_for('index') }}" method="POST">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="form-group">
+                    <input name="post" class="form-control" type="text" placeholder="Your post goes here...">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <input class="btn btn-info" type="submit" value="Post" />
+            </div>
+        </div>
+    </form>
+{% endblock content %}
